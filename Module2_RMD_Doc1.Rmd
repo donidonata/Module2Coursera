@@ -58,6 +58,30 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
+## Insert text with some footnotes
+
+Footnote ref [^1] and another one [^longnote]
+
+[^1]: Footnote1
+[^longnote]: Footnote long
+
+## Insert Tables
+
+```{r }
+knitr::kable(head(cars))
+```
+
+## Insert images
+
+![sunstar](sunstar.png)
+
+Here is the R logo
+![r logo](https://www.r-project.org/logo/Rlogo.svg) 
+
+## Insert animated GIF and videos
+
+![sunstar](sunstar.gif)
+
 ## Including Plots
 
 You can also embed plots, for example:
@@ -67,3 +91,7 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r pressure2, echo=TRUE, fig.height=4, fig.width=4}
+plot(pressure)
+```
