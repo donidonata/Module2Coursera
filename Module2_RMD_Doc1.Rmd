@@ -1,0 +1,69 @@
+---
+title: "Module2 R Markdown Doc 1"
+author: "Donata Boretti"
+date: "2024-07-01"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# This is a level 1 header
+
+## R Markdown
+
+### This is a level 3 header
+
+Here is an example of a non-numbered list:
+
+* Breakfast
+    - food
+        + eggs
+        + toast
+        + bacon
+    - drink
+        + apple juice
+* Lunch
+    - taco
+
+
+> Block quote
+> Let's do a list
+>
+> 1. NestedOne
+> 2. Two
+
+
+
+
+
+
+
+
+
+Here there is a link to [GOOGLE](https://google.com)
+
+Here is a word in **bold** and a word in __bold__.
+
+Here is a word *italics* and _italics_.
+
+When we compile our document, we are using the `R Markdown` package.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
